@@ -1,0 +1,59 @@
+@use "../../assets/fonts/font.scss" as *;
+
+* {
+  a {
+    font-size: 13px;
+    font-weight: 100;
+    font-family: "HelveticaNeueUltraLight", sans-serif;
+    letter-spacing: -0.5px;
+  }
+  .header-top {
+    .header-navigation,
+    .action-container,
+    .auth-container {
+      display: flex;
+      align-items: center;
+
+      .separator {
+        width: 1px;
+        height: 16px; // Matches the vertical height of your image
+        background-color: #ccc; // Adjust to the same color as the image
+        margin: 0 8px; // Space around the separator
+      }
+    }
+
+    a {
+      font-size: 13px;
+      font-weight: 100;
+      font-family: "HelveticaNeueUltraLight", sans-serif;
+      letter-spacing: -0.5px;
+    }
+
+    .auth-container {
+      a {
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .shopee-logo-container,
+    .left {
+      .shopee-svg-icon {
+        fill: #fff;
+      }
+    }
+    .middle {
+      .search-bar {
+      }
+      .suggestion {
+      }
+    }
+    .shoppe-cart-container,
+    .right {
+    }
+  }
+}
